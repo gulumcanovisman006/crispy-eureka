@@ -1,0 +1,28 @@
+x = "abcdefghijklmnopqrstuvwxyz"
+while True:
+    print("1) Make a code")
+    print("2) Decode a message")
+    print("3) Quit")
+    a = input("Enter your selection: ")
+    if a=="1":
+        b=list(input("enter your message"))
+        c=int(input())
+        z=''
+        for i in range (len( b)):
+            if  x.index(b[i])+c>25:
+                z=z+x[(x.index(b[i])+c)%26]
+            else:
+                z=z+x[(x.index(b[i]))+c]
+        print(z)        
+    elif a=='2':
+        d=list(input("enter your message"))
+        e=int(input())
+        j=''
+        for i in range (len(d)):
+            j=j+x[x.index(d[i])-e]
+        print(j)
+    elif a=='3':
+        break
+            
+        
+                    
