@@ -22,6 +22,7 @@ while True:
             j=j+x[x.index(d[i])-e]
         print(j)
     elif a=='3':
+        print('bitdi')
         break
             
         
